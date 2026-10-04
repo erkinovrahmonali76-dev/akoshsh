@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>AKOSH — Social</title>
+  <meta name="description" content="AKOSH — zamonaviy ijtimoiy tarmoq">
+  <link rel="icon" href="data:,">
+  <style>
+    :root{--bg:#070a12;--card:#0e1422;--card2:#121a2b;--text:#f7f9ff;--muted:#98a2b3;--line:#202a3d;--accent:#4f7cff;--accent2:#7c5cff;--danger:#ff5d73}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 500px at 20% -10%,#16234b 0%,transparent 55%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    button,input,textarea{font:inherit}button{cursor:pointer}.app{min-height:100vh}.top{height:64px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 24px;position:sticky;top:0;background:rgba(7,10,18,.9);backdrop-filter:blur(16px);z-index:20}.brand{font-weight:900;font-size:24px;letter-spacing:.5px;background:linear-gradient(90deg,#fff,#6e91ff);-webkit-background-clip:text;color:transparent}.search{width:min(360px,40vw);background:#0d1320;border:1px solid var(--line);border-radius:14px;padding:10px 14px;color:#fff;outline:none}.layout{display:grid;grid-template-columns:230px minmax(0,680px) 280px;gap:22px;max-width:1240px;margin:auto;padding:24px}.side{position:sticky;top:88px;height:max-content}.nav button{display:flex;width:100%;align-items:center;gap:12px;background:transparent;border:0;color:#dbe2f0;padding:13px 14px;border-radius:12px;text-align:left;margin-bottom:4px}.nav button:hover,.nav .active{background:#121a2a;color:#fff}.icon{font-size:20px;width:24px;text-align:center}.panel,.post,.storybar,.auth{background:rgba(14,20,34,.9);border:1px solid var(--line);border-radius:18px}.storybar{padding:14px;display:flex;gap:14px;overflow:auto;margin-bottom:16px}.story{min-width:70px;text-align:center;font-size:12px;color:#cbd5e1}.avatar{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#4f7cff,#7c5cff);font-weight:800;border:2px solid #28344e;overflow:hidden}.avatar img{width:100%;height:100%;object-fit:cover}.story .avatar{width:56px;height:56px;margin:auto;border-color:#647cff}.post{overflow:hidden;margin-bottom:18px}.posthead{display:flex;align-items:center;gap:10px;padding:13px}.posthead .meta{flex:1}.username{font-weight:750}.muted{color:var(--muted);font-size:12px}.media{width:100%;aspect-ratio:1/1;object-fit:cover;background:#090d16;display:block}.actions{display:flex;gap:8px;padding:10px 13px}.actions button,.smallbtn{background:transparent;border:0;color:#e7ebf4;font-size:20px}.caption{padding:0 14px 14px;line-height:1.45}.comments{padding:0 14px 14px;color:#c5cedd}.right .panel{padding:16px;margin-bottom:16px}.person{display:flex;gap:10px;align-items:center;padding:9px 0}.person .meta{flex:1}.primary{border:0;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;border-radius:10px;padding:8px 12px;font-weight:700}.ghost{border:1px solid var(--line);background:#0c1220;color:#fff;border-radius:10px;padding:8px 12px}.composer{padding:16px;margin-bottom:16px}.row{display:flex;gap:10px}.input,.textarea{width:100%;background:#0a0f1b;border:1px solid var(--line);border-radius:12px;color:#fff;padding:11px;outline:none}.textarea{min-height:90px;resize:vertical}.view{display:none}.view.active{display:block}.title{font-size:24px;margin:0 0 16px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.grid img,.grid video{width:100%;aspect-ratio:1;object-fit:cover;background:#0a0f18}.reels{display:grid;gap:16px}.reel{max-width:460px;margin:auto;border-radius:18px;overflow:hidden;background:#05070d;border:1px solid var(--line);position:relative}.reel video{width:100%;display:block;max-height:760px;object-fit:cover}.reel .overlay{position:absolute;left:14px;right:14px;bottom:12px;text-shadow:0 2px 8px #000}.chat{height:68vh;display:grid;grid-template-columns:230px 1fr;overflow:hidden}.chatlist{border-right:1px solid var(--line);padding:10px;overflow:auto}.chatmain{display:flex;flex-direction:column}.messages{flex:1;overflow:auto;padding:18px}.bubble{max-width:70%;padding:10px 12px;border-radius:15px;margin:7px 0;background:#172136}.bubble.me{margin-left:auto;background:linear-gradient(135deg,#355ed9,#5b45c9)}.msgform{padding:12px;border-top:1px solid var(--line);display:flex;gap:8px}.profilehead{display:flex;gap:18px;align-items:center;padding:18px}.profileavatar{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,#4f7cff,#7c5cff);display:grid;place-items:center;font-size:28px;font-weight:900;overflow:hidden}.profileavatar img{width:100%;height:100%;object-fit:cover}.tabs{display:flex;border-top:1px solid var(--line);margin-top:5px}.tabs button{flex:1;padding:13px;background:transparent;color:#9eabc0;border:0}.tabs .on{color:#fff;border-bottom:2px solid #fff}.authwrap{min-height:100vh;display:grid;place-items:center;padding:24px}.auth{width:min(420px,100%);padding:28px}.auth h1{margin-top:0}.auth .input{margin:7px 0}.notice{padding:10px 12px;background:#101b31;border:1px solid #25365a;border-radius:12px;color:#b9c8e8;margin:10px 0;font-size:13px}.hidden{display:none!important}@media(max-width:1050px){.layout{grid-template-columns:80px minmax(0,680px);justify-content:center}.right{display:none}.nav span:not(.icon){display:none}.nav button{justify-content:center}.side{top:84px}}@media(max-width:720px){.top{padding:0 12px}.search{width:38vw}.layout{display:block;padding:10px}.side{position:fixed;bottom:0;left:0;right:0;top:auto;background:rgba(7,10,18,.96);border-top:1px solid var(--line);z-index:30;padding:5px}.nav{display:flex;justify-content:space-around}.nav button{width:auto;margin:0;padding:9px}.nav span:not(.icon){display:none}.brand{font-size:20px}.chat{grid-template-columns:1fr}.chatlist{display:none}.post{border-radius:12px}.media{aspect-ratio:4/5}}
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<script type="module">
+const CONFIG = window.AKOSH_CONFIG || {};
+const hasSupabase = CONFIG.SUPABASE_URL && CONFIG.SUPABASE_KEY && !CONFIG.SUPABASE_KEY.includes("YOUR_");
+let sb = null;
+if(hasSupabase){
+  const s = document.createElement("script");
+  s.type="module";
+  s.textContent = `
+    import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+    window.akoshSupabase = createClient(${JSON.stringify(CONFIG.SUPABASE_URL)}, ${JSON.stringify(CONFIG.SUPABASE_KEY)});
+    window.dispatchEvent(new Event('akosh-supabase-ready'));
+  `;
+  document.head.appendChild(s);
+}
+const demoUsers=[
+ {id:'1',username:'akosh',name:'AKOSH',bio:'Creator • AKOSH Social',avatar:'https://i.pravatar.cc/150?img=12'},
+ {id:'2',username:'jasur',name:'Jasur',bio:'Life & travel',avatar:'https://i.pravatar.cc/150?img=13'},
+ {id:'3',username:'mehri',name:'Mehri',bio:'Books & coffee',avatar:'https://i.pravatar.cc/150?img=47'}
+];
+const demoPosts=[
+ {id:1,user:demoUsers[0],url:'https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1000&q=80',caption:'AKOSH — yangi avlod social platformasi 🚀',likes:128},
+ {id:2,user:demoUsers[1],url:'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80',caption:'Bugungi kun kayfiyati ✨',likes:74},
+ {id:3,user:demoUsers[2],url:'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=1000&q=80',caption:'Kitob + coffee = perfect ☕📚',likes:56}
+];
+let state={user:null,view:'home',posts:demoPosts,stories:demoUsers,query:'',chatUser:demoUsers[1],messages:[{me:false,text:'Salom! AKOSH qanday yoqyapti?'},{me:true,text:'Zo‘r! 🔥'}],notice:''};
+const $=s=>document.querySelector(s);
+function avatar(u,cls='avatar'){return `<div class="${cls}">${u.avatar?`<img src="${u.avatar}" alt="">`:u.username[0].toUpperCase()}</div>`}
+function toast(t){state.notice=t;render();setTimeout(()=>{state.notice='';render()},1800)}
+function render(){
+ if(!state.user){renderAuth();return}
+ $('#root').innerHTML=`<div class="app">
+ <header class="top"><div class="brand">AKOSH</div><input id="search" class="search" placeholder="Qidiruv..." value="${state.query}"><button class="ghost" id="logout">Chiqish</button></header>
+ <div class="layout"><aside class="side"><nav class="nav">
+ ${[['home','⌂','Bosh sahifa'],['explore','⌕','Explore'],['reels','▶','Reels'],['create','＋','Yaratish'],['messages','✉','Xabarlar'],['profile','◎','Profil']].map(x=>`<button class="${state.view===x[0]?'active':''}" data-view="${x[0]}"><span class="icon">${x[1]}</span><span>${x[2]}</span></button>`).join('')}
+ </nav></aside><main>${viewHTML()}</main><aside class="right"><div class="panel"><b>Tavsiya etiladi</b>${demoUsers.filter(u=>u.id!==state.user.id).map(u=>person(u)).join('')}</div><div class="panel"><div class="muted">AKOSH • Social</div><p class="muted">O‘ziga xos ijtimoiy platforma.</p></div></aside></div>
+ ${state.notice?`<div style="position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#fff;color:#111;padding:10px 16px;border-radius:12px;z-index:99">${state.notice}</div>`:''}</div>`;
+ bind();
+}
+function person(u){return `<div class="person">${avatar(u)}<div class="meta"><div class="username">@${u.username}</div><div class="muted">${u.name}</div></div><button class="primary" data-follow="${u.id}">Follow</button></div>`}
+function viewHTML(){
+ if(state.view==='home')return `<div class="storybar">${state.stories.map(u=>`<div class="story">${avatar(u)}<div>${u.username}</div></div>`).join('')}</div><div class="composer panel"><div class="row"><input id="quickPost" class="input" placeholder="Nima yangilik? Post yaratish..."><button class="primary" data-view="create">Yaratish</button></div></div>${state.posts.map(postHTML).join('')}`;
+ if(state.view==='explore')return `<h1 class="title">Explore</h1><div class="grid">${state.posts.concat(state.posts).map(p=>`<img src="${p.url}" alt="">`).join('')}</div>`;
+ if(state.view==='reels')return `<h1 class="title">Reels</h1><div class="reels">${[1,2,3].map((n,i)=>`<div class="reel"><video src="" controls poster="${state.posts[i].url}"></video><div class="overlay"><b>@${state.posts[i].user.username}</b><div>${state.posts[i].caption}</div></div></div>`).join('')}</div><div class="notice">Reels video uploadi Supabase Storage ulangandan keyin ishlaydi.</div>`;
+ if(state.view==='create')return `<div class="panel composer"><h1 class="title">Yangi post</h1><input id="postFile" class="input" type="file" accept="image/*,video/*"><br><br><textarea id="caption" class="textarea" placeholder="Caption yozing..."></textarea><br><br><button class="primary" id="publish">Joylash</button></div>`;
+ if(state.view==='profile')return `<div class="panel"><div class="profilehead">${avatar(state.user,'profileavatar')}<div><h2>@${state.user.username}</h2><div class="muted">${state.user.bio||''}</div><div style="margin-top:10px">0 Posts • 0 Followers • 0 Following</div></div></div><div class="tabs"><button class="on">Posts</button><button>Reels</button><button>Saved</button></div><div class="grid" style="padding:5px">${state.posts.filter(p=>p.user.username===state.user.username).map(p=>`<img src="${p.url}">`).join('')}</div></div>`;
+ if(state.view==='messages')return `<div class="panel chat"><div class="chatlist">${demoUsers.filter(u=>u.id!==state.user.id).map(u=>`<button class="ghost" style="width:100%;margin-bottom:7px;text-align:left" data-chat="${u.id}">${u.username}</button>`).join('')}</div><div class="chatmain"><div style="padding:14px;border-bottom:1px solid var(--line)"><b>@${state.chatUser.username}</b></div><div class="messages">${state.messages.map(m=>`<div class="bubble ${m.me?'me':''}">${m.text}</div>`).join('')}</div><form class="msgform" id="msgform"><input id="msg" class="input" placeholder="Xabar yozing..."><button class="primary">Yuborish</button></form></div></div>`;
+}
+function postHTML(p){return `<article class="post"><div class="posthead">${avatar(p.user)}<div class="meta"><div class="username">@${p.user.username}</div><div class="muted">AKOSH</div></div><button class="smallbtn">•••</button></div><img class="media" src="${p.url}" alt=""><div class="actions"><button data-like="${p.id}">♡</button><button>💬</button><button>↗</button><button style="margin-left:auto">♡</button></div><div class="caption"><b>@${p.user.username}</b> ${p.caption}<div class="muted" style="margin-top:6px">${p.likes} likes</div></div></article>`}
+function renderAuth(){ $('#root').innerHTML=`<div class="authwrap"><div class="auth"><div class="brand">AKOSH</div><h1>AKOSH Social</h1><p class="muted">Do‘stlaringiz bilan bog‘laning. Reels, Stories va xabarlar.</p><div class="notice">${hasSupabase?'Supabase ulangan.':'Demo rejim: Supabase keylarini config.js ga qo‘ying.'}</div><input id="email" class="input" placeholder="Email"><input id="password" type="password" class="input" placeholder="Parol"><input id="username" class="input" placeholder="Username"><button id="login" class="primary" style="width:100%;margin-top:10px">Kirish</button><button id="signup" class="ghost" style="width:100%;margin-top:8px">Ro‘yxatdan o‘tish</button></div></div>`; 
+ $('#login').onclick=()=>auth(false); $('#signup').onclick=()=>auth(true);
+}
+async function auth(signup){
+ const email=$('#email').value.trim(),password=$('#password').value,username=$('#username').value.trim()||email.split('@')[0];
+ if(!email||!password){toast('Email va parolni kiriting');return}
+ if(window.akoshSupabase){
+   const s=window.akoshSupabase;
+   const r=signup?await s.auth.signUp({email,password,options:{data:{username}}}):await s.auth.signInWithPassword({email,password});
+   if(r.error){toast(r.error.message);return}
+   const u=r.data.user; state.user={id:u.id,username:u.user_metadata?.username||username,name:username,bio:'AKOSH user',avatar:''};
+ }else{state.user={id:'demo',username,name:username,bio:'Demo account',avatar:''}}
+ render();
+}
+function bind(){
+ document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;render()});
+ $('#logout')?.addEventListener('click',async()=>{if(window.akoshSupabase)await window.akoshSupabase.auth.signOut();state.user=null;render()});
+ $('#search')?.addEventListener('input',e=>{state.query=e.target.value});
+ document.querySelectorAll('[data-follow]').forEach(b=>b.onclick=()=>toast('Follow tizimi Supabase ulanganda saqlanadi'));
+ document.querySelectorAll('[data-like]').forEach(b=>b.onclick=()=>{b.textContent='♥';toast('Like bosildi')});
+ $('#publish')?.addEventListener('click',async()=>{const f=$('#postFile').files[0];if(!f){toast('Rasm yoki video tanlang');return}const url=URL.createObjectURL(f);state.posts.unshift({id:Date.now(),user:state.user,url,caption:$('#caption').value||'Yangi post 🚀',likes:0});state.view='home';render()});
+ document.querySelectorAll('[data-chat]').forEach(b=>b.onclick=()=>{state.chatUser=demoUsers.find(x=>x.id===b.dataset.chat);render()});
+ $('#msgform')?.addEventListener('submit',e=>{e.preventDefault();const v=$('#msg').value.trim();if(v){state.messages.push({me:true,text:v});render()}});
+}
+window.addEventListener('akosh-supabase-ready',()=>{if(state.user)render()});
+render();
+</script>
+<script src="config.js"></script>
+</body></html>
